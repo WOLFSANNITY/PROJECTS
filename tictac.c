@@ -55,7 +55,7 @@ bool WinStaleCheck(char grid[3][3])
 	else if(isWin == 0 && nonEmptyCount == 9)
 	{
 		printf("\nStale\nNobody Wins!\n");
-		return false;
+		return true;
 	}
 	else if(isWin == 0 && nonEmptyCount != 9)
 	{
@@ -138,4 +138,5 @@ void main()
 
 	}while(choice != 2);
 	
+
 }
